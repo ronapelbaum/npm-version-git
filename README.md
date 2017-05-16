@@ -27,7 +27,7 @@ In `package.json`:
 #### `-rgx`
 The regex pattern to work on git commit message.
 ```
-npm-version-bump -rgx /\[(major|minor|patch)\]/ig
+npm-version-bump -rgx "\[(major|minor|patch)\]"
 ```
 #### `-def`
 The default `semver` incase regex did't match.
