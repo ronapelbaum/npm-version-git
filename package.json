@@ -14,7 +14,7 @@
     "jest": "jest --coverage --coverageDirectory=coverage",
     "pretest": "npm run lint",
     "test": "npm run jest",
-    "xprepublishOnly": "node ./bin/npm-version-bump",
+    "bump": "node ./bin/npm-version-bump",
     "postversion": "git push && git push --tags"
   },
   "repository": {
