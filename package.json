@@ -1,6 +1,6 @@
 {
   "name": "npm-version-bump",
-  "version": "2.1.5",
+  "version": "2.1.6",
   "description": "increment version of package.json according to git log Edit",
   "bin": "bin/npm-version-bump",
   "main": "lib/npm-version-bump.js",
