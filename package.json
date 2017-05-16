@@ -4,7 +4,10 @@
   "description": "increment version of package.json according to git log Edit",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint **/*.js -f table",
+    "lint:fix": "eslint **/*.js --fix --quiet",
+    "pretest": "npm run lint",
+    "test": "echo \"Error: no test specified\""
   },
   "repository": {
     "type": "git",
@@ -19,5 +22,10 @@
   "bugs": {
     "url": "https://github.com/ronapelbaum/npm-version-bump/issues"
   },
-  "homepage": "https://github.com/ronapelbaum/npm-version-bump#readme"
+  "homepage": "https://github.com/ronapelbaum/npm-version-bump#readme",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.2.0"
+  }
 }
