@@ -1,14 +1,14 @@
 const exec = require('child_process').exec;
 
 const gitMsgRgx = /\[(major|minor|patch)\]/ig;
-const gitLogCmd = 'git log -1 --pretty=format:%s';
 const defaultSemver = 'patch';
 
-/* eslint no-unused-vars: "off" */
-exec(gitLogCmd, (error, stdout, stderr) => {
-  const regRes = gitMsgRgx.exec(stdout);
-  const version = (regRes && regRes[1].toLowerCase()) || defaultSemver;
+const gitLogExec = cb => exec('git log -1 --pretty=format:%s', cb);
 
+const parseRgx = (str, rgx, def) => (rgx.test(str) && rgx.exec(str)[1].toLowerCase()) || def;
+
+/* eslint no-unused-vars: "off" */
+gitLogExec((error, stdout, stderr) => {
   /* eslint no-console: "off" */
-  console.log(version);
+  console.log(parseRgx(stdout, gitMsgRgx, defaultSemver));
 });
