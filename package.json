@@ -1,6 +1,6 @@
 {
   "name": "npm-version-bump",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "increment version of package.json according to git log Edit",
   "main": "index.js",
   "scripts": {
