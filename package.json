@@ -4,10 +4,10 @@
   "description": "increment version of package.json according to git log Edit",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint **/*.js -f table",
+    "lint": "eslint **/*.js",
     "lint:fix": "eslint **/*.js --fix --quiet",
     "pretest": "npm run lint",
-    "test": "echo \"Error: no test specified\""
+    "test": ""
   },
   "repository": {
     "type": "git",
