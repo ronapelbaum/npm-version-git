@@ -3,4 +3,6 @@ const npmVersionBump = require('../lib/npm-version-bump');
 const args = process.argv.slice(2);
 const getArg = (key) => (args.includes(key) && args[args.indexOf(key) + 1]) || null;
 
-npmVersionBump(getArg('-rgx'), getArg('-def'));
+cont rgxArg = getArg('-rgx');
+const rgx = rgxArg && new RegExp(rgxArg, 'ig');
+npmVersionBump(rgx, getArg('-def'));
