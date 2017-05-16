@@ -12,7 +12,7 @@
     "lint": "eslint **/*.js",
     "lint:fix": "eslint **/*.js --fix --quiet",
     "test": "npm run lint",
-    "prepublishOnly": "./bin/npm-version-bump",
+    "prepublishOnly": "node ./bin/npm-version-bump",
     "postversion": "git push && git push --tags"
   },
   "repository": {
