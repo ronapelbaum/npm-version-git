@@ -1,10 +1,9 @@
 {
   "name": "npm-version-bump",
-  "version": "1.2.3-0",
+  "version": "2.0.0",
   "description": "increment version of package.json according to git log Edit",
-  "main": "index.js",
-  "bin": "bin/npm-version-bump",
   "main": "lib/npm-version-bump.js",
+  "bin": "bin/npm-version-bump",
   "scripts": {
     "lint": "eslint **/*.js",
     "lint:fix": "eslint **/*.js --fix --quiet",
