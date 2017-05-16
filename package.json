@@ -1,0 +1,23 @@
+{
+  "name": "npm-version-bump",
+  "version": "1.0.0",
+  "description": "increment version of package.json according to git log Edit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronapelbaum/npm-version-bump.git"
+  },
+  "keywords": [
+    "npm",
+    "git"
+  ],
+  "author": "ronapelbaum@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ronapelbaum/npm-version-bump/issues"
+  },
+  "homepage": "https://github.com/ronapelbaum/npm-version-bump#readme"
+}
