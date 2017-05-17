@@ -1,4 +1,4 @@
-const npmVersionBump = require('../lib/npm-version-bump');
+const npmVersionBump = require('../lib/npm-version-git');
 
 const args = process.argv.slice(2);
 const getArg = (key) => (args.includes(key) && args[args.indexOf(key) + 1]) || null;
