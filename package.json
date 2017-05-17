@@ -13,10 +13,12 @@
     "lint:fix": "eslint **/*.js --fix --quiet",
     "jest": "jest --coverage --coverageDirectory=coverage",
     "pretest": "npm run lint",
-    "test": "npm run jest && codecov",
+    "test": "npm run jest && npm run codecov",
     "bump": "node ./bin/npm-version-git",
     "postversion": "git push && git push --tags",
-    "prepublishOnly": "npm run bump"
+    "prepublishOnly": "npm run bump",
+    "codecov": "codecov -t f23a8863-033e-45e0-847e-c974d7a57814",
+    "coveralls": "cat ./coverage/lcov.info | coveralls"
   },
   "repository": {
     "type": "git",
@@ -34,6 +36,7 @@
   "homepage": "https://github.com/ronapelbaum/npm-version-bump#readme",
   "devDependencies": {
     "codecov": "^2.2.0",
+    "coveralls": "^2.13.1",
     "eslint": "^3.19.0",
     "eslint-config-airbnb-base": "^11.2.0",
     "eslint-plugin-import": "^2.2.0",
