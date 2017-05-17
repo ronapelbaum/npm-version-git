@@ -1,4 +1,4 @@
-npm-version-bump
+npm-version-git
 ===
 [![Build Status](https://travis-ci.org/ronapelbaum/npm-version-bump.svg?branch=master)](https://travis-ci.org/ronapelbaum/npm-version-bump)
 
@@ -15,14 +15,14 @@ last commit message: `fixed typo` => `npm version patch`
 
 ## Install
 ```
-npm i -g npm-version-bump
+npm i -g npm-version-git
 ```
 
 ## Usage
 In `package.json`:
 ```json
 "scripts": {
-    "prepublishOnly": "npm-version-bump",
+    "prepublishOnly": "npm-version-git",
   }
 ```
 
@@ -30,10 +30,10 @@ In `package.json`:
 #### `-rgx`
 The regex pattern to work on git commit message.
 ```
-npm-version-bump -rgx "\[(major|minor|patch)\]"
+npm-version-git -rgx "\[(major|minor|patch)\]"
 ```
 #### `-def`
 The default `semver` incase regex did't match.
 ```
-npm-version-bump -def patch
+npm-version-git -def patch
 ```
