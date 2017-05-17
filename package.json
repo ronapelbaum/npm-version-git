@@ -1,9 +1,9 @@
 {
-  "name": "npm-version-bump",
+  "name": "npm-version-git",
   "version": "2.1.7",
   "description": "increment version of package.json according to git log Edit",
-  "bin": "bin/npm-version-bump",
-  "main": "lib/npm-version-bump.js",
+  "bin": "bin/npm-version-git",
+  "main": "lib/npm-version-git.js",
   "files": [
     "bin",
     "lib"
@@ -14,7 +14,7 @@
     "jest": "jest --coverage --coverageDirectory=coverage",
     "pretest": "npm run lint",
     "test": "npm run jest",
-    "bump": "node ./bin/npm-version-bump",
+    "bump": "node ./bin/npm-version-git",
     "postversion": "git push && git push --tags"
   },
   "repository": {
