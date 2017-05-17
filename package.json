@@ -13,7 +13,7 @@
     "lint:fix": "eslint **/*.js --fix --quiet",
     "jest": "jest --coverage --coverageDirectory=coverage",
     "pretest": "npm run lint",
-    "test": "npm run jest && npm run codecov",
+    "test": "npm run jest && codecov",
     "bump": "node ./bin/npm-version-git",
     "postversion": "git push && git push --tags",
     "prepublishOnly": "npm run bump",
