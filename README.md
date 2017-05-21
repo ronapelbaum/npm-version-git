@@ -1,6 +1,6 @@
 npm-version-git
 ===
-[![Build Status](https://travis-ci.org/ronapelbaum/npm-version-bump.svg?branch=master)](https://travis-ci.org/ronapelbaum/npm-version-bump)
+[![Build Status](https://travis-ci.org/ronapelbaum/npm-version-git.svg?branch=master)](https://travis-ci.org/ronapelbaum/npm-version-git)
 [![codecov](https://codecov.io/gh/ronapelbaum/npm-version-git/branch/master/graph/badge.svg)](https://codecov.io/gh/ronapelbaum/npm-version-git)
 
 Increment version of `package.json` according to git log
