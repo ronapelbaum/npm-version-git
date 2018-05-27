@@ -1,6 +1,6 @@
 {
   "name": "npm-version-git-cli",
-  "version": "2.2.4",
+  "version": "2.3.0",
   "description": "increment version of package.json according to git log Edit",
   "bin": "bin/npm-version-git",
   "main": "lib/npm-version-git.js",
