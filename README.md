@@ -2,10 +2,11 @@ npm-version-git-cli
 
 # Fork notice
 
-This is a fork of https://github.com/ronapelbaum/npm-version-git, which includes a patch to fix
-executing `npm-version-git` from the cli.
+This is a fork of https://github.com/ronapelbaum/npm-version-gitwhich includes
 
+- a patch to fix executing `npm-version-git` from the cli:
 https://github.com/ronapelbaum/npm-version-git/issues/2
+- Adding the `--force` flag to `npm version` if there are additional assets pending commit
 
 ===
 [![Build Status](https://travis-ci.org/ronapelbaum/npm-version-git.svg?branch=master)](https://travis-ci.org/ronapelbaum/npm-version-git)
@@ -31,7 +32,7 @@ npm i -g npm-version-git-cli
 In `package.json`:
 ```json
 "scripts": {
-    "prepublishOnly": "npm-version-git",
+    "prepublishOnly": "npm-version-git-cli",
   }
 ```
 
@@ -39,10 +40,10 @@ In `package.json`:
 #### `-rgx`
 The regex pattern to work on git commit message.
 ```
-npm-version-git -rgx "\[(major|minor|patch)\]"
+npm-version-git-cli -rgx "\[(major|minor|patch)\]"
 ```
 #### `-def`
 The default `semver` incase regex did't match.
 ```
-npm-version-git -def patch
+npm-version-git-cli -def patch
 ```
