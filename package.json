@@ -35,7 +35,7 @@
   },
   "homepage": "https://github.com/ronapelbaum/npm-version-bump#readme",
   "devDependencies": {
-    "codecov": "^2.2.0",
+    "codecov": "^3.7.1",
     "coveralls": "^2.13.1",
     "eslint": "^3.19.0",
     "eslint-config-airbnb-base": "^11.2.0",
